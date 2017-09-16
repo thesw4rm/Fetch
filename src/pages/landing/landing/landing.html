@@ -4,15 +4,30 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<ion-header style="height: 0px;" no-border>
 
-  <ion-navbar>
-    <ion-title>landing</ion-title>
+  <ion-navbar transparent>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="landing-page">
+  <div>
+    
+      <img src="assets/img/landing-image.png">
+    
+          <p class="landing-subfont">Get 💩 done!</p>
+    
+          <div text-center>
+            <button mode="md" ion-button round icon-left color="card" style="width: 300px; height: 50px;" (click)="fbLogin()">
+              <ion-icon name="logo-facebook"></ion-icon>
+               Login with Facebook
+            </button>
+          
+          </div>
+          
+    
+    </div>
 
 </ion-content>

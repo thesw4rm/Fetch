@@ -14,3 +14,31 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+@font-face{
+    font-family: 'BeachBarAltBlack';
+    src: url('../assets/fonts/BeachBarAltBlack.otf');
+}
+
+@font-face{
+    font-family: 'BeachBarAltHeavy';
+    src: url('../assets/fonts/BeachBarAltHeavy.otf');
+}
+
+@font-face{
+    font-family: 'BeachBarBlack';
+    src: url('../assets/fonts/BeachBarBlack.otf');
+}
+
+@font-face{
+    font-family: 'BeachBarHeavy';
+    src: url('../assets/fonts/BeachBarHeavy.otf');
+}
+
+@font-face{
+    font-family: 'BeachBarAltRegular';
+    src: url('../assets/fonts/BeachBarAltRegular.otf');
+}
+
+ion-header ion-icon.back-button-icon.icon {
+    color: #F45B69,
+}

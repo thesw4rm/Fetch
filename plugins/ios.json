@@ -1,0 +1,35 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-facebook4": {
+            "APP_ID": "930109570472539",
+            "APP_NAME": "Fetch",
+            "PACKAGE_NAME": "io.fetch.app"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "io.fetch.app"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "io.fetch.app"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "io.fetch.app"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "io.fetch.app"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.fetch.app"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "io.fetch.app"
+        }
+    },
+    "dependent_plugins": {}
+}

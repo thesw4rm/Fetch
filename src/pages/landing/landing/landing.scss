@@ -1,3 +1,28 @@
-page-landing {
+.landing-page {
+    background: #1EA4EB;
+}
 
+.landing-font-welcome {
+    font-family: 'BeachBarAltBlack';
+    font-size: 40pt;
+    text-align: center;
+    color: #ffffff
+}
+
+.landing-font-loop {
+    font-family: 'BeachBarAltHeavy';
+    font-size: 50pt;
+    text-align: center;
+    color: #ffffff;
+
+}
+.landing-subfont {
+    font-family: 'BeachBarAltRegular';
+    font-size: 40pt;
+    text-align: center;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
