@@ -22,5 +22,18 @@
         <h2>{{displayName}}</h2>
     </div>
     <div class="spacer" style="height: 10px;"></div>
-      
+
+    <div text-center>
+        <button mode="md" ion-button round icon-left color="secondary" style="width: 250px; height: 50px;" (click)="fbLogin()">
+          Get My Listings
+        </button>
+
+        <button mode="md" ion-button round icon-left color="card" style="width: 250px; height: 50px;" (click)="fbLogin()">
+          Get My Fetches
+        </button>
+
+        <button mode="md" ion-button round icon-left color="danger" style="width: 150px; height: 50px;" (click)="logoutUser()">
+          Logout
+        </button>
+      </div>
 </ion-content>

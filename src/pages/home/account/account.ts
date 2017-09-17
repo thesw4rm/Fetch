@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LandingPage } from '../../landing/landing/landing';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 /**
  * Generated class for the AccountPage page.
  *
@@ -18,12 +20,14 @@ export class AccountPage {
   
   displayName= "Chran Murugapandi";
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public angFire: AngularFireModule, public angFireAuth: AngularFireAuthModule) {
     
     
   }
 
- 
+  logoutUser(): firebase.Promise<void> {
+    return firebase.auth().signOut().then(()=>this.navCtrl.setRoot(LandingPage))
+  }
   
 
 }
