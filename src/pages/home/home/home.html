@@ -14,12 +14,23 @@
 
 
 <ion-content>
-  <ion-list>      
-        <ion-item>
-          <h2>Title</h2>
-          <h3>Description of Job</h3>
-          <p>25 miles away</p>
-          <button ion-button clear large item-end>$25</button>
+    <ion-list>
+      <ion-item>
+          <ion-range min="5" max="500" [(ngModel)]="range" color="secondary">
+              <ion-label range-left>5</ion-label>
+              <ion-label range-right>500</ion-label>
+            </ion-range>  
+      </ion-item>    
+      <ion-item>
+        {{range}}
+      </ion-item>
+      <ng-container *ngFor="let list of listings">
+        <ion-item *ngIf="list.distance <= range">
+            <h2>{{list.title}}</h2>
+            <h3>Description </h3>
+            <p>{{list.distance}} miles away</p>
+            <button ion-button clear large item-end>${{list.price}}</button>
         </ion-item>
-  </ion-list>
+      </ng-container>
+    </ion-list>
 </ion-content>

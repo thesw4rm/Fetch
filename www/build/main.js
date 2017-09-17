@@ -1,4 +1,4 @@
-webpackJsonp([5],{
+webpackJsonp([4],{
 
 /***/ 147:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -119,23 +119,19 @@ webpackEmptyAsyncContext.id = 155;
 var map = {
 	"../pages/home/account/account.module": [
 		434,
-		2
+		1
 	],
 	"../pages/home/home/home.module": [
 		435,
-		1
-	],
-	"../pages/home/search/search.module": [
-		436,
 		0
 	],
 	"../pages/landing/landing/landing.module": [
 		433,
-		4
+		3
 	],
 	"../pages/tabs/tabs.module": [
 		432,
-		3
+		2
 	]
 };
 function webpackAsyncContext(req) {
@@ -229,8 +225,7 @@ AppModule = __decorate([
                     { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/landing/landing/landing.module#LandingPageModule', name: 'LandingPage', segment: 'landing', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/home/account/account.module#AccountPageModule', name: 'AccountPage', segment: 'account', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/home/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/home/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/home/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] }
                 ]
             }),
             __WEBPACK_IMPORTED_MODULE_9_angularfire2__["a" /* AngularFireModule */].initializeApp(firebaseCredential),
@@ -352,7 +347,6 @@ var TabsPage = (function () {
     function TabsPage(navCtrl) {
         this.navCtrl = navCtrl;
         this.homeRoot = 'HomePage';
-        this.searchRoot = 'SearchPage';
         this.accountRoot = 'AccountPage';
     }
     return TabsPage;
@@ -360,7 +354,7 @@ var TabsPage = (function () {
 TabsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-tabs',template:/*ion-inline-start:"/Users/chranmurugapandi/github/Fetch/src/pages/tabs/tabs.html"*/'<ion-tabs color="primary">\n    <ion-tab [root]="homeRoot" tabTitle="Home" tabIcon="home"></ion-tab>\n    <ion-tab [root]="searchRoot" tabTitle="Search" tabIcon="search"></ion-tab>\n    <ion-tab [root]="accountRoot" tabTitle="Account" tabIcon="contact"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/chranmurugapandi/github/Fetch/src/pages/tabs/tabs.html"*/
+        selector: 'page-tabs',template:/*ion-inline-start:"/Users/chranmurugapandi/github/Fetch/src/pages/tabs/tabs.html"*/'<ion-tabs color="primary">\n    <ion-tab [root]="homeRoot" tabTitle="Home" tabIcon="home"></ion-tab>\n    <ion-tab [root]="accountRoot" tabTitle="Account" tabIcon="contact"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/chranmurugapandi/github/Fetch/src/pages/tabs/tabs.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
 ], TabsPage);
