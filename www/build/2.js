@@ -66,16 +66,15 @@ var AccountPage = (function () {
     function AccountPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.photoUrl = "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/20638138_1972390039661044_7930668379242096001_n.jpg?oh=c4f8820bd6673c0ee1f6423b53209c2a&oe=5A4B933C";
+        this.displayName = "Chran Murugapandi";
     }
-    AccountPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad AccountPage');
-    };
     return AccountPage;
 }());
 AccountPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-account',template:/*ion-inline-start:"/Users/chranmurugapandi/github/Fetch/src/pages/home/account/account.html"*/'<!--\n  Generated template for the AccountPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="primary">\n    <ion-title>Account</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/chranmurugapandi/github/Fetch/src/pages/home/account/account.html"*/,
+        selector: 'page-account',template:/*ion-inline-start:"/Users/chranmurugapandi/github/Fetch/src/pages/home/account/account.html"*/'<!--\n  Generated template for the AccountPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="primary">\n    <ion-title>Account</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n    <div class="profile-image">\n        <img src="{{photoUrl}}">\n    </div>\n    <div style="text-align: center;">\n        <h2>{{displayName}}</h2>\n    </div>\n    <div class="spacer" style="height: 10px;"></div>\n      \n</ion-content>\n'/*ion-inline-end:"/Users/chranmurugapandi/github/Fetch/src/pages/home/account/account.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
 ], AccountPage);
